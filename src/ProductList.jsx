@@ -1,6 +1,7 @@
 import Product from "./Product";
+import "./styles/productlist-page.css";
 
-function ProductList () {
+function ProductList() {
   return (
     <div className="container">
       <div className="title-div">

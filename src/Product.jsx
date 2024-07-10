@@ -1,8 +1,15 @@
 import likeIcon from "./assets/svg/like-icon.svg";
 import blackClogs from "./assets/png/image-1.png";
 import "./styles/productlist-page.css";
+import { useNavigate } from "react-router-dom";
 
 function Product() {
+  const navigate = useNavigate();
+
+  const handleProceedToCart = () => {
+    navigate("/cartpage");
+  };
+
   return (
     <div className="item">
       <div className="item-title">
@@ -106,7 +113,9 @@ function Product() {
           </div>
           <div className="price">£200</div>
         </div>
-        <button className="addCart">Add To Cart</button>
+        <button className="addCart" onClick={handleProceedToCart}>
+          Add To Cart
+        </button>
       </div>
     </div>
   );

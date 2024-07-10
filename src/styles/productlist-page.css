@@ -146,7 +146,8 @@ body::-webkit-scrollbar {
   font-size: 18px;
   font-weight: 600;
   line-height: 21.6px;
-  gap: 20px;
+  gap: 8px;
+  padding-bottom: 0px;
 }
 
 .like-item {
@@ -163,6 +164,12 @@ body::-webkit-scrollbar {
 .price-size-cart {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.size-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .addCart {
@@ -201,12 +208,13 @@ span.size {
 .size-btn {
   width: 85px;
   height: 34px;
-  margin-left: 10px;
   padding: 6px 10px 6px 10px;
   border-radius: 3px;
   border: 1px solid var(--Base-Base_Black);
   background-color: transparent;
   color: #0a0a0b;
+  display: flex;
+  justify-content: space-between;
 }
 
 .price {
@@ -231,6 +239,7 @@ span.size {
   height: 41px;
   padding: var(--Spacings) var(--Spacingsm);
   gap: 4px;
+  white-space: nowrap;
   border-radius: var(--Spacingxxs);
   border: 1px solid var(--Primary-Primary1000);
   color: var(--Base-Base_Black);
@@ -384,11 +393,6 @@ span.size {
   .shoe-options-div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .size-div {
-    display: flex;
-    align-items: center;
   }
 
   .size-div .size {

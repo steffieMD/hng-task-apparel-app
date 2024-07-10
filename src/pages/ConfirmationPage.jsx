@@ -2,19 +2,8 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "../styles/confirmation-page.css";
 import confirmationImage from "../assets/png/confirmation-img.png";
-import { useNavigate } from "react-router-dom";
 
 export default function ConfirmationPage() {
-  const navigate = useNavigate();
-
-  const backToPayment = () => {
-    navigate("/payment");
-  };
-
-  const backToShipping = () => {
-    navigate("/shipping");
-  };
-
   return (
     <>
       <Navbar />
