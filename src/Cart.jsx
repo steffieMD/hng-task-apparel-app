@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-
+import "./styles/cart-page.css";
 
 export default function Cart() {
   const navigate = useNavigate();
@@ -86,7 +86,9 @@ export default function Cart() {
                 <span className="bill-total">$50</span>
               </div>
             </div>
-            <button className="checkout-btn" onClick={handleProceedToCheckout}>Proceed to Checkout</button>
+            <button className="checkout-btn" onClick={handleProceedToCheckout}>
+              Proceed to Checkout
+            </button>
           </div>
         </div>
       </div>
