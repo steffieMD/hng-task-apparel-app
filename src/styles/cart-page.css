@@ -189,7 +189,7 @@ h1 {
   color: var(--Secondary-Secondary);
 }
 
-.summary {
+.order-summary {
   border: 1px solid var(--Base-Base_Black);
   padding: 20px;
   display: flex;
@@ -199,7 +199,7 @@ h1 {
   height: 434px;
 }
 
-.summary h3 {
+.order-summary h3 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -207,31 +207,31 @@ h1 {
   text-align: left;
 }
 
-.summary .summary-list {
+.order-summary .summary-list {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.summary .summary-list div {
+.order-summary .summary-list div {
   display: flex;
   justify-content: space-between;
 }
 
-.summary .summary-list {
+.order-summary .summary-list {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.03em;
 }
 
-.summary .summary-list div .promo {
+.order-summary .summary-list div .promo {
   display: flex;
   flex-direction: column;
 }
 
-.summary .summary-list div .promo span:nth-child(2) {
+.order-summary .summary-list div .promo span:nth-child(2) {
   font-size: 8px;
   font-weight: 400;
   line-height: 12px;
@@ -241,14 +241,14 @@ h1 {
   text-decoration: underline;
 }
 
-.summary .summary-list .total {
+.order-summary .summary-list .total {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.03em;
 }
 
-.summary button {
+.order-summary button {
   margin-top: 80px;
   padding: 10px 15px;
   width: 100%;
@@ -264,7 +264,7 @@ h1 {
   cursor: pointer;
 }
 
-.summary button:hover {
+.order-summary button:hover {
   background-color: var(--Primary-Primary900);
   box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
 }
@@ -396,7 +396,7 @@ h1 {
     display: none;
   }
 
-  .summary {
+  .order-summary {
     width: 359px;
     height: 304px;
     padding: var(--Spacingm) 0 0 0;
@@ -405,13 +405,13 @@ h1 {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   }
 
-  .summary h3 {
+  .order-summary h3 {
     font-size: 18px;
     line-height: 21.6px;
     padding: 0px 23px 0px 23px;
   }
 
-  .summary .summary-list {
+  .order-summary .summary-list {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -421,7 +421,7 @@ h1 {
     margin: 39px 0;
   }
 
-  .summary button {
+  .order-summary button {
     margin-top: 0;
     padding: 13px 78px 13px 78px;
     width: 359px;
@@ -471,7 +471,7 @@ h1 {
     gap: 20px;
   }
 
-  .summary button {
+  .order-summary button {
     margin-top: 30px;
   }
 

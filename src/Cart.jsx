@@ -66,7 +66,7 @@ export default function Cart() {
 
             <span className="for-you">Recommended for You</span>
           </div>
-          <div className="summary">
+          <div className="order-summary">
             <h3>Order Summary</h3>
             <div className="summary-list">
               <div>
