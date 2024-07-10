@@ -1,6 +1,7 @@
 // import "./styles/navbar-footer.css";
 import logo from "./assets/svg/logo.svg";
 import searchIcon from "./assets/svg/search-icon.svg";
+import magnifyingGlassIcon from "./assets/svg/mag-glass-icon.svg";
 import cartIcon from "./assets/svg/cart-dot.svg";
 import likeIcon from "./assets/svg/like-icon.svg";
 import profileIcon from "./assets/svg/profile-icon.svg";
@@ -52,7 +53,7 @@ export default function Navbar() {
         </div>
         <div className="other-links">
           <span className="search-icon">
-            <img src={searchIcon} alt="cart icon" />
+            <img src={magnifyingGlassIcon} alt="search icon" />
           </span>
           <Link to="/cartpage">
             <span className="cart-icon">

@@ -1,7 +1,8 @@
 import likeIcon from "./assets/svg/like-icon.svg";
 import blackClogs from "./assets/png/image-1.png";
+import "./styles/productlist-page.css";
 
-function Product () {
+function Product() {
   return (
     <div className="item">
       <div className="item-title">
@@ -78,28 +79,30 @@ function Product () {
         <div className="size-price">
           <div className="size-div">
             <span className="size">Size:</span>
-            <button className="size-btn">
-              US 12
-              <svg
-                width="13"
-                height="18"
-                viewBox="0 0 13 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M5.65703 17.071L2.74615e-05 11.414L1.41403 10L6.36403 14.95L11.314 10L12.728 11.414L7.07103 17.071C6.8835 17.2585 6.62919 17.3638 6.36403 17.3638C6.09886 17.3638 5.84455 17.2585 5.65703 17.071Z"
-                  fill="#0A0A0B"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M7.071 0.29277L12.728 5.94977L11.314 7.36377L6.364 2.41377L1.414 7.36377L0 5.94977L5.657 0.29277C5.84453 0.105299 6.09884 -1.62504e-05 6.364 -1.62504e-05C6.62916 -1.62504e-05 6.88347 0.105299 7.071 0.29277Z"
-                  fill="#0A0A0B"
-                />
-              </svg>
-            </button>
+            <div className="size-btn">
+              <span>US 12</span>
+              <span>
+                <svg
+                  width="13"
+                  height="18"
+                  viewBox="0 0 13 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M5.65703 17.071L2.74615e-05 11.414L1.41403 10L6.36403 14.95L11.314 10L12.728 11.414L7.07103 17.071C6.8835 17.2585 6.62919 17.3638 6.36403 17.3638C6.09886 17.3638 5.84455 17.2585 5.65703 17.071Z"
+                    fill="#0A0A0B"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M7.071 0.29277L12.728 5.94977L11.314 7.36377L6.364 2.41377L1.414 7.36377L0 5.94977L5.657 0.29277C5.84453 0.105299 6.09884 -1.62504e-05 6.364 -1.62504e-05C6.62916 -1.62504e-05 6.88347 0.105299 7.071 0.29277Z"
+                    fill="#0A0A0B"
+                  />
+                </svg>
+              </span>
+            </div>
           </div>
           <div className="price">£200</div>
         </div>
