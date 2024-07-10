@@ -2,8 +2,18 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import "../styles/confirmation-page.css";
 import confirmationImage from "../assets/png/confirmation-img.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ConfirmationPage() {
+  const navigate = useNavigate();
+
+  const handleProceedToCheckout = () => {
+    navigate("/payment");
+  };
+
+  const backToShipping = () => {
+    navigate("/shipping");
+  };
   return (
     <>
       <Navbar />
@@ -13,7 +23,7 @@ export default function ConfirmationPage() {
             Shipping
           </span>
           <span>&rarr;</span>
-          <span className="payment-header" onClick={backToPayment}>
+          <span className="payment-header" onClick={handleProceedToCheckout}>
             Payment
           </span>
           <span className="active">&rarr;</span>
