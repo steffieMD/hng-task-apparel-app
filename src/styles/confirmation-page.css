@@ -154,6 +154,8 @@ h2 {
   padding-bottom: 40px;
   display: flex;
   gap: 24px;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 h2 span {
@@ -205,6 +207,10 @@ h2 span.active {
     align-items: center;
   }
 
+  h2 {
+    justify-self: center;
+    align-self: center;
+  }
   h2 span {
     font-size: 16px;
   }
