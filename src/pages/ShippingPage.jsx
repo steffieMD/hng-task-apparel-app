@@ -22,7 +22,7 @@ export default function ShippingPage() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="shipping-page-container">
         <h1>
           <span className="active">Shipping</span>
           <span className="active">&rarr;</span>
@@ -86,8 +86,8 @@ export default function ShippingPage() {
             </div>
             <div></div>
           </div>
-          <div className="shipping-cart-summary">
-            <div className="summary">
+          <div className="shipping-cart-page-summary">
+            <div className="shipping-summary">
               <h3>Order Summary</h3>
               <div className="summary-list">
                 <div>
