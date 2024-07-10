@@ -4,7 +4,7 @@ import "./styles/productlist-page.css";
 function ProductList() {
   return (
     <div className="container">
-      <div className="title-div">
+      <div className="title-div-men">
         <h1>Men’s Shoes</h1>
         <div className="shoe-options-div">
           <div className="shoe-options active">View All</div>

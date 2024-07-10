@@ -10,6 +10,10 @@ function Product() {
     navigate("/cartpage");
   };
 
+  const handleShowProduct = () => {
+    navigate("/cartpage");
+  };
+
   return (
     <div className="item">
       <div className="item-title">

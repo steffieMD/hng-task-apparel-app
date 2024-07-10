@@ -39,16 +39,16 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.title-div {
+.title-div-men {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.title-div h1 {
+.title-div-men h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 76.8px;
+  text-align: center;
 }
 
 .shoe-options-div {
@@ -324,7 +324,7 @@ span.size {
     padding: 20px 30px 0 30px;
   }
 
-  .title-div h1 {
+  .title-div-men h1 {
     font-size: 32px;
   }
 
@@ -371,10 +371,27 @@ span.size {
   .btn-loadMore {
     display: block;
   }
+
+  .listProduct .item {
+    width: 330px;
+  }
+
+  .addCart {
+    width: 140px;
+    font-size: 14px;
+  }
+
+  .addCart:hover {
+    box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .size-btn {
+    width: 80px;
+  }
 }
 
 /* Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1224px) {
   .productListSection .listProduct {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
