@@ -82,9 +82,11 @@ export default function ProductPage() {
             <div className="size-section">
               <span className="choose-size">Size:</span>
               <div className="size-option-qty">
-                <select name="shoesize">
-                  <option value="">Select</option>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Select </option>
+                  <option value="1">One</option>
                 </select>
+
                 <div className="itemQuantity">
                   <span>-</span>
                   <span>1</span>

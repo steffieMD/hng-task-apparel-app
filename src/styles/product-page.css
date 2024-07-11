@@ -133,8 +133,9 @@
 }
 
 .color-options {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .color-options div {
@@ -168,11 +169,11 @@
 select,
 .size-option-qty .itemQuantity {
   border-radius: 4px;
-  border: 1px solid var(--Primary-Primary1000);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 36px;
-  padding: 15px;
+  border: 1px solid var(--Primary-Primary1000) !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  line-height: 36px !;
+  padding: 15px !important;
 }
 
 .itemQuantity {
@@ -223,6 +224,36 @@ ul {
   font-weight: 400;
   line-height: 19.2px;
   color: var(--Neutrals-Neutrals600);
+}
+
+.hover-text,
+.hover-img,
+.shoe-options,
+select,
+.itemQuantity,
+.page-btns button,
+.page-direction span,
+.img-options,
+.color-options {
+  cursor: pointer;
+}
+
+.page-btns button:hover {
+  background-color: var(--Primary-Primary700);
+  box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--Primary-Primary700);
+}
+
+.other-others li :hover {
+  color: var(--Primary-Primary700) !important;
+}
+
+.hover-text:hover {
+  color: var(--Base-Base_Black);
+}
+
+.itemQuantity:hover {
+  border: 2px solid var(--Primary-Primary700);
 }
 
 /* MEDIA QUERIES */
