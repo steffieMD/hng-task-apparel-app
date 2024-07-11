@@ -368,6 +368,19 @@ a.sale {
     padding-left: 0px;
   }
 
+  .magIcon {
+    display: block !important;
+  }
+
+  .homePage {
+    padding-left: 10px !important;
+  }
+
+  .nav-icons {
+    justify-self: start;
+    align-self: start;
+  }
+
   .shoe-options {
     text-align: center;
     align-self: center;
