@@ -123,12 +123,15 @@ export default function ShippingPage() {
             <div className="radio-box">
               <div>
                 <div className="svg-div">
-                  <input
-                    class="form-check-input mt-0"
-                    type="radio"
-                    value="Free"
-                    name="Free"
-                  />
+                  <label htmlFor="free">
+                    <input
+                      class="form-check-input mt-0"
+                      type="radio"
+                      value="Free"
+                      name="Free option"
+                      id="free"
+                    />
+                  </label>
                 </div>
                 <span className="bold-text">Free</span>
                 <span>Regular Shipment</span>
@@ -138,12 +141,15 @@ export default function ShippingPage() {
             <div className="radio-box">
               <div>
                 <div className="svg-div">
-                  <input
-                    class="form-check-input mt-0"
-                    type="radio"
-                    value="Paid"
-                    name="Paid"
-                  />
+                  <label htmlFor="paid">
+                    <input
+                      class="form-check-input mt-0"
+                      type="radio"
+                      value="Paid"
+                      name="Paid option"
+                      id="paid"
+                    />
+                  </label>
                 </div>
                 <span className="bold-text">$10</span>
                 <span>Priority Shipment</span>

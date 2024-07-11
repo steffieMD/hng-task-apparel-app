@@ -165,6 +165,7 @@ body::-webkit-scrollbar {
 .sign-in-text {
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
   gap: 10px;
 }
 
@@ -284,6 +285,11 @@ h2 {
   border: none;
 }
 
+.form-check-input:checked {
+  background-color: var(--Base-Base_Black) !important;
+  border-color: var(--Base-Base_Black) !important;
+}
+
 .chatbot {
   width: 50px;
   height: 50px;
@@ -335,6 +341,10 @@ h2 {
 
   .sign-in-div {
     display: none;
+  }
+
+  .sign-in-text span:nth-child(1) {
+    font-size: 14px;
   }
 
   .shipping-address-form {
@@ -415,6 +425,17 @@ h2 {
   }
 
   .shipping-page-container {
-    padding: 20px 62px 0 62px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .sign-in-text span:nth-child(1) {
+    font-size: 12px;
+  }
+  .sign-in-text span:nth-child(2) {
+    font-size: 8px;
+  }
+
+  .shipping-page-div span {
+    font-size: 14px;
   }
 }

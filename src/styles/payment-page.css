@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
 }
 
 /* Container */
-.container {
+.payment-page-container {
   padding: 20px 50px 0 50px;
   color: var(--Base-Base_Black);
   display: flex;
@@ -258,8 +258,6 @@ label span {
 
 .split-form {
   width: 68%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .split-form input {
@@ -328,7 +326,7 @@ h2 {
     width: 100%;
   }
 
-  .container {
+  .payment-page-container {
     padding: 20px;
     justify-content: center;
     align-items: center;
@@ -442,7 +440,7 @@ h2 {
     margin-top: 30px;
   }
 
-  .container {
+  .payment-page-container {
     padding: 20px 30px 0 30px;
   }
 
@@ -453,5 +451,16 @@ h2 {
 
   .payment-form {
     width: 100%;
+  }
+
+  .sign-in-text span:nth-child(1) {
+    font-size: 12px;
+  }
+  .sign-in-text span:nth-child(2) {
+    font-size: 8px;
+  }
+
+  .split-form {
+    gap: 10px;
   }
 }

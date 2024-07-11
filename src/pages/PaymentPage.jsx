@@ -21,7 +21,7 @@ export default function PaymentPage() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="payment-page-container">
         <h1>
           <span className="payment-header" onClick={backToShipping}>
             Shipping
