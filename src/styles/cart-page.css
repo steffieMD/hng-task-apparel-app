@@ -39,7 +39,7 @@ body {
   align-items: center;
 }
 
-h1 {
+.cart-container h1 {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -48,7 +48,6 @@ h1 {
 
 .cart-summary {
   display: flex;
-  /* justify-content: space-between; */
   gap: 30px;
   margin-top: 30px;
 }
@@ -61,7 +60,6 @@ h1 {
 }
 
 .cart-items {
-  width: 850px;
   margin-bottom: 50px;
 }
 
@@ -90,8 +88,7 @@ h1 {
 
 .cart .item {
   display: grid;
-  grid-template-columns: 1fr 2fr 0.5fr;
-  width: 850px;
+  grid-template-columns: 1fr 2fr;
   gap: 15px;
   padding: 20px;
   border-bottom: 1px solid var(--Base-Base_Black);
@@ -275,17 +272,13 @@ h1 {
 }
 
 .listProduct {
-  margin-top: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  padding-bottom: 15px;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  padding: 40px;
 }
-
 /* MEDIA QUERIES */
-@media screen and (min-width: 2400px) {
-}
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
@@ -336,20 +329,20 @@ h1 {
   }
 
   .cart .item-image {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     border-radius: 5.26px;
   }
 
   .cart .item-image img {
-    width: 91.24px;
+    width: 60%;
     height: 70.89px;
   }
 
   .cart .cart-items .item-info-div {
     width: 197px;
     height: 132px;
-    gap: 22px;
+    justify-content: space-between;
     flex-direction: column;
   }
 
@@ -449,11 +442,10 @@ h1 {
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1224px) {
   .cart .item-image {
-    width: 70%;
     height: 100%;
   }
   .cart .item-image img {
-    width: 100%;
+    width: 60%;
   }
 
   .cart .item {
@@ -496,25 +488,21 @@ h1 {
   }
 
   .listProduct {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    padding-top: 40px;
   }
 
   .cart-container {
-    padding: 20px 30px 0 30px;
+    padding: 20px 50px 0 50px;
   }
 
   .cart {
-    width: 650px;
+    width: 100%;
   }
 
-  .cart .item {
-    width: 650px;
-  }
-  .item-info-div {
-    gap: 80px;
-  }
   .edit-cart .change-quantity span {
     font-size: 18px;
   }

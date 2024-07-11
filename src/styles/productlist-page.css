@@ -31,8 +31,8 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.container {
-  padding: 20px 110px 0 110px;
+.product-list-container {
+  padding: 20px 80px 0 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,13 +42,15 @@ body::-webkit-scrollbar {
 .title-div-men {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-div-men h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 76.8px;
-  text-align: center;
+  margin: 0 auto;
 }
 
 .shoe-options-div {
@@ -104,11 +106,13 @@ body::-webkit-scrollbar {
 
 .productListSection {
   margin-top: 50px;
+  display: flex;
 }
 .productListSection .listProduct {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+  row-gap: 60px;
 }
 
 .listProduct .item {
@@ -312,15 +316,9 @@ span.size {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 2400px) {
-  .productListSection .listProduct {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
 /* Mobile */
 @media only screen and (max-width: 600px) {
-  .container {
+  .product-list-container {
     padding: 20px 30px 0 30px;
   }
 
@@ -360,8 +358,7 @@ span.size {
   }
 
   .productListSection .listProduct {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
+    row-gap: 60px;
   }
 
   .page-direction {
@@ -393,12 +390,11 @@ span.size {
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1224px) {
   .productListSection .listProduct {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    row-gap: 60px;
   }
 
-  .container {
-    padding: 20px 30px 0 30px;
+  .product-list-container {
+    padding: 20px 50px 0 50px;
   }
 
   .listProduct .item {

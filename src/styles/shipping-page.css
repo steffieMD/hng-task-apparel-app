@@ -55,13 +55,13 @@ body::-webkit-scrollbar {
   border-bottom: 1px solid var(--Base-Base_Black);
 }
 
-h1 {
+.shipping-page-container h1 {
   padding-bottom: 40px;
   display: flex;
   gap: 24px;
 }
 
-h1 span {
+.shipping-page-container h1 span {
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -69,11 +69,11 @@ h1 span {
   color: var(--Neutrals-Neutrals500);
   cursor: pointer;
 }
-h1 span:hover {
+.shipping-page-container h1 span:hover {
   color: #0a0a0b;
 }
 
-h1 span.active {
+.shipping-page-container h1 span.active {
   color: var(--Base-Base_Black);
 }
 
@@ -322,7 +322,7 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-  h1 span {
+  .shipping-page-container h1 span {
     font-size: 16px;
   }
 
