@@ -30,30 +30,30 @@ export default function Navbar() {
             id="navbarSupportedContent">
             <ul className="navbar-nav gap-3 ms-auto me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link ps-2" href="#">
                   New In
                 </a>
               </li>
               <li className="nav-item men-active">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link ps-2" to="/">
                   Men
                 </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link ps-2" href="#">
                   Women
                 </a>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link">Kids</a>
+                <a className="nav-link ps-2">Kids</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Brands</a>
+                <a className="nav-link ps-2">Brands</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link sale">Sale</a>
+                <a className="nav-link sale ps-2">Sale</a>
               </li>
             </ul>
             <form className="d-flex flex-row " role="search">
