@@ -71,7 +71,6 @@ body {
 }
 
 .cart .item-image {
-  width: 198.35px;
   height: 231px;
   border-radius: 9.24px;
   background-color: var(--Base-Base_White);
@@ -82,7 +81,7 @@ body {
 }
 
 .cart .item-image img {
-  width: 160.16px;
+  width: 100%;
   height: 124.43px;
 }
 
@@ -340,7 +339,6 @@ body {
   }
 
   .cart .cart-items .item-info-div {
-    width: 197px;
     height: 132px;
     justify-content: space-between;
     flex-direction: column;
@@ -445,7 +443,7 @@ body {
     height: 100%;
   }
   .cart .item-image img {
-    width: 60%;
+    width: 90%;
   }
 
   .cart .item {
