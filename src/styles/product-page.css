@@ -117,7 +117,7 @@
 .color-section-div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .color-selection {
@@ -142,6 +142,8 @@
   display: flex;
   background-color: var(--Primary_Primary100);
   border-radius: var(--Spacingxs);
+  justify-content: center;
+  align-items: center;
 }
 
 .color-options img {
@@ -256,6 +258,10 @@ select,
   border: 2px solid var(--Primary-Primary700);
 }
 
+.dots-div {
+  display: none;
+}
+
 /* MEDIA QUERIES */
 /* Mobile */
 @media only screen and (max-width: 600px) {
@@ -283,6 +289,7 @@ select,
 
   .hover-img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--Primary_Primary100);
@@ -292,6 +299,7 @@ select,
 
   .hover-img img {
     width: 70%;
+    padding-top: 70px;
   }
 
   .image-adds {
@@ -302,6 +310,24 @@ select,
   .image-content {
     margin: 0;
     gap: 0;
+  }
+
+  .dots-div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .dots {
+    width: 13.08px;
+    height: 13.08px;
+    border: 0.82px solid var(--Primary-Primary900, rgba(36, 49, 88, 1));
+    border-radius: 50%;
+  }
+
+  .clicked-dot {
+    background-color: var(--Primary-Primary900, rgba(36, 49, 88, 1));
   }
 }
 
