@@ -22,14 +22,12 @@ export default function Navbar() {
             aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-
+          <Link className="navbar-brand" to="/">
+            <img src={logo} alt="shop logo" className="homePage" />
+          </Link>
           <div
             className="collapse navbar-collapse "
             id="navbarSupportedContent">
-            <Link className="navbar-brand" to="/">
-              <img src={logo} alt="shop logo" className="homePage" />
-            </Link>
-
             <ul className="navbar-nav gap-3 ms-auto me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -74,6 +72,11 @@ export default function Navbar() {
         <ul
           className=" me-auto mb-2 mb-lg-0 nav-icons gap-3
 ">
+          <li className="nav-item">
+            <a className="nav-link magIcon" href="#">
+              <img src={magnifyingGlassIcon} alt="like icon" />
+            </a>
+          </li>
           <li className="nav-item">
             <Link className="nav-link" to="/cartpage">
               <span className="cart-icon">

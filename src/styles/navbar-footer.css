@@ -54,6 +54,9 @@ body::-webkit-scrollbar {
   --bs-nav-link-padding-y: 0.5rem;
 }
 
+.navbar .container-fluid {
+  gap: 20px !important;
+}
 .flex-row {
   gap: 0 !important;
 }
@@ -80,6 +83,10 @@ a.sale {
 
 .men-active {
   background-color: #243158 !important;
+}
+
+.magIcon {
+  display: none !important;
 }
 
 .footer {
@@ -295,8 +302,26 @@ a.sale {
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   }
 
-  .navbar-brand {
-    display: none !important;
+  .navbar {
+    padding: 10px 15px !important;
+  }
+
+  .navbar .container-fluid {
+    /* display: block; */
+    padding-left: 0px;
+  }
+
+  .magIcon {
+    display: block !important;
+  }
+
+  .homePage {
+    padding-left: 10px !important;
+  }
+
+  .nav-icons {
+    justify-self: start;
+    align-self: start;
   }
   .main-footer {
     padding: 0;
