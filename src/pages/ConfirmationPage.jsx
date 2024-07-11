@@ -17,7 +17,7 @@ export default function ConfirmationPage() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="confirmation-page-container">
         <h2>
           <span className="shipping-header" onClick={backToShipping}>
             Shipping

@@ -35,7 +35,7 @@ body {
 }
 
 /* Container */
-.container {
+.confirmation-page-container {
   padding: 20px 50px 0 50px;
   color: var(--Base-Base_Black);
   display: flex;
@@ -203,7 +203,7 @@ h2 span.active {
 @media only screen and (max-width: 600px) {
   /* navbar */
 
-  .container {
+  .confirmation-page-container {
     padding: 20px 20px 0 20px;
     display: flex;
     flex-direction: column;
@@ -302,8 +302,9 @@ h2 span.active {
     margin-top: 30px;
   }
 
-  .container {
+  .confirmation-page-container {
     padding: 20px 30px 0 30px;
+    border: 1px solid red;
   }
 
   .payment {
@@ -318,7 +319,7 @@ h2 span.active {
   }
 
   .main-div img {
-    min-width: 300px;
+    min-width: 250px;
     height: 410px;
     margin-bottom: 370px;
   }
