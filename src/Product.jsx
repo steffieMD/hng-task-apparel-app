@@ -15,7 +15,7 @@ function Product() {
   };
 
   return (
-    <div className="item" onClick={handleShowProduct}>
+    <div className="item">
       <div className="item-title">
         <div className="item-name-rating">
           <h2>Classic All-Terrain Clog</h2>
@@ -83,7 +83,7 @@ function Product() {
           <img src={likeIcon} alt="" />
         </div>
       </div>
-      <div className="img-div">
+      <div className="img-div" onClick={handleShowProduct}>
         <img src={blackClogs} alt="black clogs" />
       </div>
       <div className="price-size-cart">
