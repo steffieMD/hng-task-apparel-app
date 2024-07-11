@@ -5,7 +5,6 @@ import magnifyingGlassIcon from "./assets/svg/mag-glass-icon.svg";
 import cartIcon from "./assets/svg/cart-dot.svg";
 import likeIcon from "./assets/svg/like-icon.svg";
 import profileIcon from "./assets/svg/profile-icon.svg";
-import hamburgerMenuIcon from "./assets/svg/hamburger-icon.svg";
 import { Outlet, Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -56,15 +55,15 @@ export default function Navbar() {
                 <a class="nav-link sale">Sale</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex flex-row " role="search">
               <input
-                class="form-control me-2"
+                class="form-control "
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+              <button class="btn " type="submit">
+                <img src="src/assets/svg/search-icon.svg" alt="" />
               </button>
             </form>
           </div>

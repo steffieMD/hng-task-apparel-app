@@ -51,6 +51,26 @@ body::-webkit-scrollbar {
   gap: 10px !important;
 }
 
+.flex-row {
+  gap: 0 !important;
+}
+
+.btn {
+  border: 2px solid #e1e5f3 !important;
+  border-left: none !important;
+  /* padding: 15px 15px 15px 15px; */
+  background-color: #fff !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.form-control {
+  border: 2px solid #e1e5f3 !important;
+  border-right: none !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
 .header {
   display: grid;
   grid-template-columns: 0.8fr 1.5fr 1fr;
