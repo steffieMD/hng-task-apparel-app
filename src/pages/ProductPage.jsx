@@ -34,6 +34,13 @@ export default function ProductPage() {
           <div className="hover-img-section">
             <div className="hover-img">
               <img src={hoverImage} alt="" />
+              <div className="dots-div">
+                <div className="dots clicked-dot"></div>
+                <div className="dots"></div>
+                <div className="dots"></div>
+                <div className="dots"></div>
+                <div className="dots"></div>
+              </div>
             </div>
 
             <div className="img-options-div">
