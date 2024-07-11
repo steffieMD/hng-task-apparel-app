@@ -323,6 +323,12 @@ a.sale {
     justify-self: start;
     align-self: start;
   }
+
+  .nav-icons img {
+    width: 24px;
+    height: 24px;
+  }
+
   .main-footer {
     padding: 0;
     display: block;
