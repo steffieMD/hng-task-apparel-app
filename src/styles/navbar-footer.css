@@ -363,6 +363,11 @@ a.sale {
     font-size: 12px;
   }
 
+  .navbar .container-fluid {
+    display: block !important;
+    padding-left: 0px;
+  }
+
   .shoe-options {
     text-align: center;
     align-self: center;
