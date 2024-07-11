@@ -15,8 +15,14 @@ import colorOptionImg1 from "../assets/png/terrain-clogs-product-img/color-optio
 import colorOptionImg2 from "../assets/png/terrain-clogs-product-img/color-option-img-2.png";
 import colorOptionImg3 from "../assets/png/terrain-clogs-product-img/color-option-img-3.png";
 import colorOptionImg4 from "../assets/png/terrain-clogs-product-img/color-option-img-4.png";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductPage() {
+  const navigate = useNavigate();
+
+  const handleProceedToCart = () => {
+    navigate("/cartpage");
+  };
   return (
     <>
       <Navbar />
@@ -103,7 +109,7 @@ export default function ProductPage() {
             </div>
 
             <div className="page-btns">
-              <button>ADD TO CART</button>
+              <button onClick={handleProceedToCart}>ADD TO CART</button>
               <button>
                 <img src={productLikeIcon} alt="" />
               </button>

@@ -125,7 +125,7 @@ export default function ShippingPage() {
                 <div className="svg-div">
                   <label htmlFor="free">
                     <input
-                      class="form-check-input mt-0"
+                      className="form-check-input mt-0"
                       type="radio"
                       value="Free"
                       name="Free option"
@@ -143,7 +143,7 @@ export default function ShippingPage() {
                 <div className="svg-div">
                   <label htmlFor="paid">
                     <input
-                      class="form-check-input mt-0"
+                      className="form-check-input mt-0"
                       type="radio"
                       value="Paid"
                       name="Paid option"
