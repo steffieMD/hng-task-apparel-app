@@ -259,6 +259,50 @@ select,
 /* MEDIA QUERIES */
 /* Mobile */
 @media only screen and (max-width: 600px) {
+  .image-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-options,
+  .hover-text,
+  .page-direction,
+  .brand,
+  .choose-size {
+    display: none;
+  }
+
+  .page-container {
+    padding: 0;
+  }
+  .image-content .hover-img-section {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .hover-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Primary_Primary100);
+    border-radius: var(--Spacingxs);
+    height: 384px;
+  }
+
+  .hover-img img {
+    width: 70%;
+  }
+
+  .image-adds {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .image-content {
+    margin: 0;
+    gap: 0;
+  }
 }
 
 /* Tablet */
