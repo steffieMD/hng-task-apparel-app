@@ -307,7 +307,7 @@ a.sale {
   }
 
   .navbar .container-fluid {
-    /* display: block; */
+    display: block;
     padding-left: 0px;
   }
 
