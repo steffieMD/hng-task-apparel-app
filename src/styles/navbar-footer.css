@@ -340,6 +340,8 @@ a.sale {
 
   .shoe-options {
     text-align: center;
+    align-self: center;
+    white-space: nowrap;
   }
 
   .sign-up {

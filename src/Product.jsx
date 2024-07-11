@@ -11,11 +11,11 @@ function Product() {
   };
 
   const handleShowProduct = () => {
-    navigate("/cartpage");
+    navigate("/product");
   };
 
   return (
-    <div className="item">
+    <div className="item" onClick={handleShowProduct}>
       <div className="item-title">
         <div className="item-name-rating">
           <h2>Classic All-Terrain Clog</h2>

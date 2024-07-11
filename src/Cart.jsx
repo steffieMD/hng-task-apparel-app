@@ -83,9 +83,18 @@ export default function Cart() {
       </div>
 
       <div className="cart-listProduct">
-        <Product />
-        <Product />
-        <Product />
+        <div className="rec-item">
+          {" "}
+          <Product />
+        </div>
+        <div className="rec-item">
+          {" "}
+          <Product />
+        </div>
+        <div className="rec-item">
+          {" "}
+          <Product />
+        </div>
       </div>
       <div className="chatbot">?</div>
     </div>
