@@ -110,9 +110,11 @@ body::-webkit-scrollbar {
 }
 .productListSection .listProduct {
   display: flex;
-  flex-basis: auto;
   flex-wrap: wrap;
   row-gap: 60px;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
 }
 
 .listProduct .item {
@@ -230,12 +232,11 @@ span.size {
   margin-top: 15px;
 }
 
-.page-direction {
-  margin: 0 auto;
+.bottom-page-direction {
+  margin: 50px auto;
   width: 35%;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
   align-items: center;
 }
 
@@ -366,7 +367,7 @@ span.size {
     row-gap: 60px;
   }
 
-  .page-direction {
+  .bottom-page-direction {
     display: none;
   }
 
@@ -421,7 +422,7 @@ span.size {
     width: 80px;
   }
 
-  .page-direction {
+  .bottom-page-direction {
     width: 55%;
   }
 }

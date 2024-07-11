@@ -50,7 +50,7 @@ function ProductList() {
             <Product id={9} />
           </div>
         </div>
-        <div className="page-direction">
+        <div className="bottom-page-direction">
           <button className="prev">&lt; Previous</button>
 
           <span className="other-pages">
