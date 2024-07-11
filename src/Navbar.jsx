@@ -10,82 +10,85 @@ import { Outlet, Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light justify-content-between">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <div className="container-fluid gap-4">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <Link class="navbar-brand" to="/">
+
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent">
+            <Link className="navbar-brand" to="/">
               <img src={logo} alt="shop logo" className="homePage" />
             </Link>
 
-            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+            <ul className="navbar-nav gap-3 ms-auto me-auto mb-2 mb-lg-0 ">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   New In
                 </a>
               </li>
-              <li class="nav-item active">
-                <Link class="nav-link" to="/">
+              <li className="nav-item men-active">
+                <Link className="nav-link" to="/">
                   Men
                 </Link>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link" href="#">
                   Women
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link">Kids</a>
+              <li className="nav-item">
+                <a className="nav-link">Kids</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">Brands</a>
+              <li className="nav-item">
+                <a className="nav-link">Brands</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link sale">Sale</a>
+              <li className="nav-item">
+                <a className="nav-link sale">Sale</a>
               </li>
             </ul>
-            <form class="d-flex flex-row " role="search">
+            <form className="d-flex flex-row " role="search">
               <input
-                class="form-control "
+                className="form-control "
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn " type="submit">
+              <button className="btn " type="submit">
                 <img src="src/assets/svg/search-icon.svg" alt="" />
               </button>
             </form>
           </div>
         </div>
         <ul
-          class=" me-auto mb-2 mb-lg-0 nav-icons
+          className=" me-auto mb-2 mb-lg-0 nav-icons gap-3
 ">
-          <li class="nav-item">
+          <li className="nav-item">
             <Link className="nav-link" to="/cartpage">
               <span className="cart-icon">
                 <img src={cartIcon} alt="cart icon" />
               </span>
             </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li className="nav-item">
+            <a className="nav-link" href="#">
               <img src={likeIcon} alt="like icon" />
             </a>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link ">
+          <li className="nav-item">
+            <a className="nav-link ">
               <img src={profileIcon} alt="profile icon" />
             </a>
           </li>

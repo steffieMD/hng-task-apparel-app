@@ -82,7 +82,7 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="listProduct">
+      <div className="cart-listProduct">
         <Product />
         <Product />
         <Product />

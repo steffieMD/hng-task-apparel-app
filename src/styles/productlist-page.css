@@ -357,6 +357,10 @@ span.size {
     margin-top: 5px;
   }
 
+  .productListSection {
+    max-width: 315px;
+  }
+
   .productListSection .listProduct {
     row-gap: 60px;
   }
@@ -370,7 +374,7 @@ span.size {
   }
 
   .listProduct .item {
-    width: 330px;
+    max-width: 315px;
   }
 
   .addCart {

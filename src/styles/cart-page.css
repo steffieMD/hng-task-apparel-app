@@ -270,7 +270,7 @@ body {
   height: 100%;
 }
 
-.listProduct {
+.cart-listProduct {
   display: flex;
   flex-basis: auto;
   flex-wrap: wrap;
@@ -309,7 +309,7 @@ body {
     margin-bottom: 10px;
   }
 
-  .listProduct {
+  .cart-listProduct {
     display: none;
   }
 
@@ -485,7 +485,7 @@ body {
     font-size: 12px;
   }
 
-  .listProduct {
+  .cart-listProduct {
     display: flex;
     flex-basis: auto;
     flex-wrap: wrap;

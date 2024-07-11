@@ -34,12 +34,14 @@ body::-webkit-scrollbar {
 .navbar {
   background-color: #172039 !important;
   padding: 24px !important;
+  flex-wrap: nowrap !important;
 }
 
 .navbar a {
   color: var(--Base-Base_White) !important;
   font-size: 18px !important;
   font-weight: 600 !important;
+  white-space: nowrap !important;
 }
 
 .nav-icons {
@@ -50,7 +52,6 @@ body::-webkit-scrollbar {
   list-style: none;
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
-  gap: 10px !important;
 }
 
 .flex-row {
@@ -77,7 +78,7 @@ a.sale {
   color: #ce4f0d !important;
 }
 
-.active {
+.men-active {
   background-color: #243158 !important;
 }
 
@@ -294,6 +295,9 @@ a.sale {
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
   }
 
+  .navbar-brand {
+    display: none !important;
+  }
   .main-footer {
     padding: 0;
     display: block;
