@@ -37,7 +37,7 @@ body::-webkit-scrollbar {
 
 /* Container */
 .payment-page-container {
-  padding: 20px 50px 0 50px;
+  padding: 30px 70px 59px 65px;
   color: var(--Base-Base_Black);
   display: flex;
   flex-direction: column;
@@ -45,13 +45,13 @@ body::-webkit-scrollbar {
 }
 
 .payment-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 65.6% 30.6%;
+  gap: 49px;
 }
 
-h1 {
-  padding-bottom: 40px;
+.payment-page-container h1 {
+  padding-bottom: 39px;
   display: flex;
   gap: 24px;
 }
@@ -73,7 +73,7 @@ h1 span:hover {
   color: #0a0a0b;
 }
 .payment-summary {
-  width: 396px;
+  width: 100%;
   height: 434px;
 
   border: 1px solid var(--Base-Base_Black);
@@ -153,11 +153,11 @@ h1 span:hover {
 }
 
 .sign-in-div {
-  height: 88px;
   border: 1px solid var(--Base-Base_Black);
-  padding: 20px;
+  padding: 20px 30px 21px 30px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 .sign-in-text {
@@ -203,7 +203,7 @@ h1 span:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+
   margin-bottom: 25px;
 }
 
@@ -215,24 +215,22 @@ h1 span:hover {
   color: var(--Neutrals-Neutrals500);
 }
 
-.shipping-address-form,
-.shipping-method-div {
-  padding-top: 40px;
-}
-
 .payment-form {
-  width: 850px;
+  width: 100%;
 }
 
 .shipping-address-form h2 {
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+}
+
+.shipping-page-container .shipping-method-div h2 {
+  padding: 24px 0 24px 0;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 10px;
+  gap: 9px;
 }
 
 label,
@@ -258,7 +256,8 @@ label span {
 
 .split-form {
   width: 68%;
-  gap: 30px;
+  gap: 9px;
+  column-gap: 15px;
 }
 .split-form input {
   width: 100%;
@@ -326,16 +325,15 @@ h2 {
   }
 
   .payment-page-container {
-    padding: 20px;
+    padding: 19px 16px 15px 16px;
     justify-content: center;
     align-items: center;
   }
 
-  h1 {
+  .payment-page-container h1 {
     padding-left: 0;
     gap: 10px;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
   }
   h1 span {
     font-size: 16px;
@@ -347,6 +345,7 @@ h2 {
     flex-direction: column;
     gap: 40px;
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .sign-in-div {
@@ -354,11 +353,15 @@ h2 {
   }
 
   .payment-form {
-    width: 340px;
+    width: 100%;
   }
 
   .shipping-address-form {
     padding-top: 0;
+  }
+
+  form {
+    gap: 9px;
   }
 
   .form-input {
@@ -367,6 +370,8 @@ h2 {
 
   .split-form {
     width: 100%;
+    gap: 9px;
+    column-gap: 15px;
   }
   .shipping-div,
   .shipping-div div {
@@ -398,7 +403,7 @@ h2 {
   }
 
   .payment-summary {
-    width: 340px;
+    width: 100%;
     height: 304px;
     padding: var(--Spacingm) 0 0 0;
     border-radius: var(--Spacingxs);
@@ -410,7 +415,7 @@ h2 {
   .payment-summary h3 {
     font-size: 18px;
     line-height: 21.6px;
-    padding: 0px 23px 0px 23px;
+    padding: 0 23px 0px 23px;
   }
 
   .payment-summary .summary-list {
@@ -418,15 +423,15 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding: 0px 23px 0px 23px;
+    padding: 24px 23px 14px 23px;
     gap: 24px;
-    margin: 39px 0;
+    margin: 0;
   }
 
   .payment-summary button {
     margin-top: 0;
     padding: 13px 78px 13px 78px;
-    width: 340px;
+    width: 100%;
     border-radius: var(--Spacingxs);
     border: none;
     font-weight: 600;
@@ -434,13 +439,13 @@ h2 {
 }
 
 /* Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1350px) {
+@media only screen and (min-width: 601px) and (max-width: 1240px) {
   .payment-summary button {
     margin-top: 30px;
   }
 
   .payment-page-container {
-    padding: 20px 30px 0 30px;
+    padding: 20px 30px 21px 20px;
   }
 
   .payment-payment {

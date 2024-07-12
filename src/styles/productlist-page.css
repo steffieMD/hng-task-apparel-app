@@ -57,8 +57,9 @@ body::-webkit-scrollbar {
 
 .shoe-options-div {
   display: flex;
-  justify-content: space-between;
+  gap: 28px;
   width: 100%;
+  text-align: center;
 }
 
 .shoe-options {
@@ -136,8 +137,10 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
-.listProduct .item img {
-  width: 70%;
+.listProduct .item .img-div img {
+  width: 37.2%;
+  margin-top: 56.4px;
+  margin-bottom: 70.93px;
 }
 
 .listProduct img:hover {
@@ -165,19 +168,28 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-self: center;
+}
+
+.like-item .like-icon {
+  width: 32px;
+  height: 28px;
 }
 
 .price-size-cart {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+}
+
+.size-price {
+  width: 100%;
 }
 
 .size-div {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 13px;
+  justify-content: space-between;
 }
 
 .addCart {
@@ -214,7 +226,7 @@ span.size {
 }
 
 .size-btn {
-  width: 85px;
+  width: 100%;
   height: 34px;
   padding: 6px 10px 6px 10px;
   border-radius: 3px;
@@ -222,7 +234,8 @@ span.size {
   background-color: transparent;
   color: #0a0a0b;
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
+  white-space: nowrap;
 }
 
 .price {
@@ -230,6 +243,7 @@ span.size {
   font-weight: 600;
   line-height: 28.8px;
   text-align: left;
+  margin-top: 4px;
 }
 
 .bottom-page-direction {
@@ -337,11 +351,20 @@ span.size {
   }
 
   .price {
-    font-size: 18px;
+    font-size: 38px;
   }
 
   span.size {
-    font-size: 14px;
+    font-size: 24px;
+  }
+
+  .size-btn {
+    font-size: 24px;
+    padding: 10px 40px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    gap: 20px;
   }
 
   .shoe-options {
@@ -357,9 +380,18 @@ span.size {
   }
 
   .price-size-cart {
-    gap: 20px;
+    gap: 80px;
   }
 
+  .size-price {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .size-div {
+    gap: 20px;
+  }
   .loadMore-div {
     margin-bottom: 15px;
   }
@@ -412,10 +444,6 @@ span.size {
   .addCart:hover {
     box-shadow: 0 6px 10px 4px rgba(0, 0, 0, 0.1);
   }
-
-  .size-btn {
-    width: 80px;
-  }
 }
 
 @media only screen and (max-width: 406px) {
@@ -454,7 +482,12 @@ span.size {
   }
 
   .size-div .size {
-    font-size: 12px;
+    font-size: 17px;
+  }
+
+  .size-div {
+    justify-content: flex-start;
+    gap: 20px;
   }
 
   .size-btn {
@@ -469,6 +502,18 @@ span.size {
 @media only screen and (max-width: 1240px) {
   .productListSection .listProduct {
     column-gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1225px) and (max-width: 1409px) {
+  .size-div {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .size-btn {
+    width: 50%;
+    justify-content: center;
   }
 }
 

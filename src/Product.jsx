@@ -80,7 +80,7 @@ function Product() {
           </div>
         </div>
         <div className="like-item">
-          <img src={likeIcon} alt="" />
+          <img className="like-icon" src={likeIcon} alt="" />
         </div>
       </div>
       <div className="img-div" onClick={handleShowProduct}>
