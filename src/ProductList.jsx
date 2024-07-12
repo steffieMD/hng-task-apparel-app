@@ -7,7 +7,7 @@ function ProductList() {
   const [productData, setProductData] = useState([{ isLoaded: true }]);
 
   useEffect(() => {
-    axios.get("products.json").then((response) => {
+    axios.get("../products.json").then((response) => {
       setProductData(response.data);
     });
   }, []);
