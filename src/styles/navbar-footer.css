@@ -73,6 +73,10 @@ body::-webkit-scrollbar {
   border-bottom-right-radius: 0px !important;
 }
 
+.form-control::placeholder {
+  color: var(--Primary_Primary400);
+}
+
 a.sale {
   color: #ce4f0d !important;
 }
