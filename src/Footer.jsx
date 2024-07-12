@@ -8,6 +8,7 @@ import applePayIcon from "./assets/svg/ApplePay.svg";
 import googlePayIcon from "./assets/svg/Google Pay.svg";
 import payoonerIcon from "./assets/svg/Payoneer.svg";
 import paypalIcon from "./assets/svg/PayPal.svg";
+import rightArrow from "./assets/svg/right-arrow.svg";
 
 export default function Footer() {
   return (
@@ -50,7 +51,9 @@ export default function Footer() {
             </span>
             <div className="email-bar">
               <input type="email" name="" id="" placeholder="Email Address" />
-              <button>&gt;</button>
+              <button>
+                <img src={rightArrow} alt="" />
+              </button>
             </div>
             <div className="download-text">
               DOWNLOAD AND SHOP FASTER WITH THE APP

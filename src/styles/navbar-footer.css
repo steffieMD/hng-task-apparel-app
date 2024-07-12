@@ -33,8 +33,9 @@ body::-webkit-scrollbar {
 
 .navbar {
   background-color: #172039 !important;
-  padding: 24px !important;
+  padding: 0 24px !important;
   flex-wrap: nowrap !important;
+  height: 80px !important;
 }
 
 .navbar a {
@@ -153,6 +154,7 @@ a.sale {
 .payment-options {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 41px;
 }
 
 .payment-icons img {
@@ -226,8 +228,13 @@ a.sale {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
+
+  padding: 14px;
+  background-color: var(--Primary_Primary100);
+}
+
+.email-bar input::placeholder {
   color: var(--Primary_Primary400);
-  padding: 10px;
 }
 
 .email-bar button {
@@ -239,6 +246,10 @@ a.sale {
   border: 2px solid #172039;
   color: var(--Primary_Primary100);
   font-size: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .download-text {
@@ -320,11 +331,6 @@ a.sale {
     width: 110px !important;
   }
 
-  .nav-icons {
-    justify-self: start;
-    align-self: start;
-  }
-
   .nav-icons img {
     width: 24px;
     height: 24px;
@@ -356,36 +362,18 @@ a.sale {
   .payment-options {
     justify-content: center;
     gap: 6.4px;
-    padding-bottom: 10px;
+    margin-bottom: 9.4px;
   }
 }
 
 /* Tablet */
-@media only screen and (min-width: 601px) and (max-width: 1224px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   .main-footer {
     padding: 60px 30px 15px 30px;
   }
 
   .footer-links-div div a {
     font-size: 12px;
-  }
-
-  .navbar .container-fluid {
-    display: block !important;
-    padding-left: 0px;
-  }
-
-  .magIcon {
-    display: block !important;
-  }
-
-  .homePage {
-    padding-left: 25px !important;
-  }
-
-  .nav-icons {
-    justify-self: start;
-    align-self: start;
   }
 
   .shoe-options {
@@ -416,5 +404,24 @@ a.sale {
   }
   .policy span {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar .container-fluid {
+    display: block !important;
+    padding-left: 0px;
+  }
+
+  .magIcon {
+    display: block !important;
+  }
+
+  .homePage {
+    padding-left: 25px !important;
+  }
+
+  .navbar a {
+    font-size: 14px !important;
   }
 }
