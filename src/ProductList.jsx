@@ -39,15 +39,15 @@ function ProductList() {
         </div>
         <div className="productListSection">
           <div className="listProduct">
-            <Product id={1} />
-            <Product id={2} />
-            <Product id={3} />
-            <Product id={4} />
-            <Product id={5} />
-            <Product id={6} />
-            <Product id={7} />
-            <Product id={8} />
-            <Product id={9} />
+            <Product itemNum={1} />
+            <Product itemNum={2} />
+            <Product itemNum={3} />
+            <Product itemNum={4} />
+            <Product itemNum={5} />
+            <Product itemNum={6} />
+            <Product itemNum={7} />
+            <Product itemNum={8} />
+            <Product itemNum={9} />
           </div>
         </div>
         <div className="bottom-page-direction">

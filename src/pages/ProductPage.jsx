@@ -98,9 +98,13 @@ export default function ProductPage() {
             <div className="size-section">
               <span className="choose-size">Size:</span>
               <div className="size-option-qty">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select </option>
+                <select
+                  className="form-select"
+                  aria-label="Default select example"
+                  defaultValue="DEFAULT">
+                  <option value="DEFAULT">Select </option>
                   <option value="1">One</option>
+                  <option value="2">Two</option>
                 </select>
 
                 <div className="itemQuantity">

@@ -351,20 +351,22 @@ span.size {
   }
 
   .price {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   span.size {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .size-btn {
-    font-size: 24px;
-    padding: 10px 40px;
+    font-size: 18px;
+    padding: 8% 15%;
     height: 100%;
+    width: 70%;
     align-items: center;
+    justify-content: center;
     display: flex;
-    gap: 20px;
+    gap: 30%;
   }
 
   .shoe-options {
@@ -380,7 +382,7 @@ span.size {
   }
 
   .price-size-cart {
-    gap: 80px;
+    gap: 0%;
   }
 
   .size-price {
@@ -391,6 +393,7 @@ span.size {
 
   .size-div {
     gap: 20px;
+    width: 60%;
   }
   .loadMore-div {
     margin-bottom: 15px;
@@ -449,6 +452,16 @@ span.size {
 @media only screen and (max-width: 406px) {
   .listProduct .item {
     max-width: 315px;
+  }
+
+  .size-btn {
+    font-size: 12px;
+    padding: 10%;
+  }
+
+  .addCart {
+    width: 120px;
+    font-size: 10px;
   }
 
   .productListSection .listProduct {
