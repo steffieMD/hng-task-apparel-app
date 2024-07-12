@@ -3,21 +3,9 @@ import blackClogs from "./assets/png/image-1.png";
 import "./styles/productlist-page.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-function Product({ itemNum }) {
-  const [productData, setProductData] = useState([{ isLoaded: true }]);
-
-  // useEffect(() => {
-  //   fetch("products.json")
-  //     .then((response) => {
-  //       response.json();
-  //     })
-  //     .then((data) => setProductData(data));
-  // }, []);
-
-  // if (productData[0].isLoaded) console.log("Loading");
-  // else console.log("wetin be this");
-
+function Product({ name, price, src }) {
   const navigate = useNavigate();
 
   const handleProceedToCart = () => {
@@ -28,13 +16,12 @@ function Product({ itemNum }) {
     navigate("/product");
   };
 
-  // console.log(productData);
-
   return (
     <div className="item">
       <div className="item-title">
         <div className="item-name-rating">
-          <h2></h2>
+          <h2>{name}</h2>
+
           <div className="rating">
             <svg
               width="27"
@@ -100,7 +87,7 @@ function Product({ itemNum }) {
         </div>
       </div>
       <div className="img-div" onClick={handleShowProduct}>
-        <img src={blackClogs} alt="black clogs" />
+        <img src={src} alt="black clogs" />
       </div>
       <div className="price-size-cart">
         <div className="size-price">

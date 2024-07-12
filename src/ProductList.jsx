@@ -1,7 +1,17 @@
 import Product from "./Product";
 import "./styles/productlist-page.css";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 function ProductList() {
+  const [productData, setProductData] = useState([{ isLoaded: true }]);
+
+  useEffect(() => {
+    axios.get("products.json").then((response) => {
+      setProductData(response.data);
+    });
+  }, []);
+
   return (
     <>
       <div className="product-list-container">
@@ -39,15 +49,11 @@ function ProductList() {
         </div>
         <div className="productListSection">
           <div className="listProduct">
-            <Product itemNum={1} />
-            <Product itemNum={2} />
-            <Product itemNum={3} />
-            <Product itemNum={4} />
-            <Product itemNum={5} />
-            <Product itemNum={6} />
-            <Product itemNum={7} />
-            <Product itemNum={8} />
-            <Product itemNum={9} />
+            {productData.map((item) => {
+              return (
+                <Product name={item.name} price={item.price} src={item.image} />
+              );
+            })}
           </div>
         </div>
         <div className="bottom-page-direction">

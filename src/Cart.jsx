@@ -2,8 +2,18 @@ import { useNavigate } from "react-router-dom";
 import "./styles/cart-page.css";
 import Product from "./Product";
 import itemImage from "./assets/png/image-1.png";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 export default function Cart() {
+  const [productData, setProductData] = useState([{ isLoaded: true }]);
+
+  useEffect(() => {
+    axios.get("products.json").then((response) => {
+      setProductData(response.data);
+    });
+  }, []);
+
   const navigate = useNavigate();
 
   const handleProceedToCheckout = () => {
@@ -82,18 +92,14 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="cart-listProduct">
-        <div className="rec-item">
-          {" "}
-          <Product />
-        </div>
-        <div className="rec-item">
-          {" "}
-          <Product />
-        </div>
-        <div className="rec-item">
-          {" "}
-          <Product />
+      <div className="productListSection">
+        <div className="listProduct">
+          {productData.map((item, i) => {
+            if (i < 3)
+              return (
+                <Product name={item.name} price={item.price} src={item.image} />
+              );
+          })}
         </div>
       </div>
       <div className="chatbot">?</div>
