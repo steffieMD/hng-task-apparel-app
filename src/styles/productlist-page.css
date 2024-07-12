@@ -230,7 +230,6 @@ span.size {
   font-weight: 600;
   line-height: 28.8px;
   text-align: left;
-  /* margin-top: 15px; */
 }
 
 .bottom-page-direction {
@@ -405,6 +404,19 @@ span.size {
 
   .size-btn {
     width: 80px;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  .listProduct .item {
+    max-width: 315px;
+  }
+
+  .productListSection .listProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
