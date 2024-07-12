@@ -38,34 +38,37 @@ export default function ProductPage() {
         </h1>
         <div className="image-content">
           <div className="hover-img-section">
-            <div className="hover-img">
-              <img src={hoverImage} alt="" />
-              <div className="dots-div">
-                <div className="dots clicked-dot"></div>
-                <div className="dots"></div>
-                <div className="dots"></div>
-                <div className="dots"></div>
-                <div className="dots"></div>
+            <div className="img-text-div">
+              <div className="hover-img">
+                <img src={hoverImage} alt="" />
+                <div className="dots-div">
+                  <div className="dots clicked-dot"></div>
+                  <div className="dots"></div>
+                  <div className="dots"></div>
+                  <div className="dots"></div>
+                  <div className="dots"></div>
+                </div>
               </div>
-            </div>
 
-            <div className="img-options-div">
-              <div className="img-options">
-                <img src={hoverSideImage1} alt="" />
-              </div>
-              <div className="img-options">
-                <img src={hoverSideImage2} alt="" />
-              </div>
-              <div className="img-options">
-                <img src={hoverSideImage3} alt="" />
-              </div>
-              <div className="img-options">
-                <img src={hoverSideImage4} alt="" />
-              </div>
-              <div className="img-options">
-                <img src={hoverSideImage5} alt="" />
+              <div className="img-options-div">
+                <div className="img-options">
+                  <img src={hoverSideImage1} alt="" />
+                </div>
+                <div className="img-options">
+                  <img src={hoverSideImage2} alt="" />
+                </div>
+                <div className="img-options">
+                  <img src={hoverSideImage3} alt="" />
+                </div>
+                <div className="img-options">
+                  <img src={hoverSideImage4} alt="" />
+                </div>
+                <div className="img-options">
+                  <img src={hoverSideImage5} alt="" />
+                </div>
               </div>
             </div>
+            <span className="hover-text">Hover to magnify</span>
           </div>
           <div className="image-adds">
             <div className="itemInfo">
@@ -142,7 +145,7 @@ export default function ProductPage() {
             </ul>
           </div>
         </div>
-        <span className="hover-text">Hover to magnify</span>
+
         <Chatbot />
       </div>
 

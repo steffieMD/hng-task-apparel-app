@@ -54,7 +54,7 @@
   margin-top: 37px;
 }
 
-.image-content .hover-img-section {
+.image-content .hover-img-section .img-text-div {
   display: grid;
   grid-template-columns: 1.6fr 0.4fr;
   gap: 24px;
@@ -88,7 +88,7 @@
   align-items: center;
 }
 .img-options img {
-  width: 60%;
+  width: 40%;
 }
 
 .image-adds {
@@ -279,7 +279,7 @@ select,
   .page-container {
     padding: 0;
   }
-  .image-content .hover-img-section {
+  .image-content .hover-img-section .img-text-div {
     grid-template-columns: 1fr;
     gap: 0;
     padding: 0;
@@ -375,10 +375,6 @@ select,
     gap: 40px;
   }
 
-  .hover-text {
-    padding: 0;
-  }
-
   .name-product {
     font-size: 36px;
   }
@@ -389,5 +385,9 @@ select,
 
   .brand {
     display: none;
+  }
+
+  .page-direction span {
+    font-size: 10px;
   }
 }
