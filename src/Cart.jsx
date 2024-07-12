@@ -97,7 +97,12 @@ export default function Cart() {
           {productData.map((item, i) => {
             if (i < 3)
               return (
-                <Product name={item.name} price={item.price} src={item.image} />
+                <Product
+                  name={item.name}
+                  price={item.price}
+                  src={item.image}
+                  key={i}
+                />
               );
           })}
         </div>

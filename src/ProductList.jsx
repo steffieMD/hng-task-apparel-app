@@ -49,9 +49,14 @@ function ProductList() {
         </div>
         <div className="productListSection">
           <div className="listProduct">
-            {productData.map((item) => {
+            {productData.map((item, i) => {
               return (
-                <Product name={item.name} price={item.price} src={item.image} />
+                <Product
+                  name={item.name}
+                  price={item.price}
+                  src={item.image}
+                  key={i}
+                />
               );
             })}
           </div>
