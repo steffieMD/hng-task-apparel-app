@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 }
 
 .product-list-container {
-  padding: 20px 80px 0 80px;
+  padding: 30px 110px 0 110px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +44,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .title-div-men h1 {
@@ -51,12 +52,13 @@ body::-webkit-scrollbar {
   font-weight: 700;
   line-height: 76.8px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .shoe-options-div {
   display: flex;
   justify-content: space-between;
-  gap: var(--Spacingl);
+  width: 100%;
 }
 
 .shoe-options {
@@ -82,8 +84,9 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   text-align: right;
-  margin-top: 50px;
+  margin-top: 32px;
   align-self: flex-end;
+  gap: 14px;
 }
 
 .sort-btn {
@@ -101,11 +104,10 @@ body::-webkit-scrollbar {
   font-weight: 600;
   line-height: 19.2px;
   color: var(--Neutrals-Neutrals600);
-  margin-top: 20px;
 }
 
 .productListSection {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   width: 100%;
 }
@@ -231,11 +233,11 @@ span.size {
 }
 
 .bottom-page-direction {
-  margin: 50px auto;
   width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 47px;
 }
 
 .prev {
@@ -297,7 +299,7 @@ span.size {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0 25px 0;
+  margin-bottom: 41px;
 }
 
 .btn-loadMore {
@@ -319,17 +321,19 @@ span.size {
 /* Mobile */
 @media only screen and (max-width: 600px) {
   .product-list-container {
-    padding: 20px 30px 0 30px;
+    padding: 20px 18px 0 18px;
   }
 
   .title-div-men h1 {
     font-size: 32px;
+    padding-bottom: 20px;
   }
 
   .shoe-options-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 12px;
   }
 
   .price {
@@ -356,8 +360,16 @@ span.size {
     gap: 20px;
   }
 
+  .loadMore-div {
+    margin-bottom: 15px;
+  }
+
   .shoe-options:nth-child(7) {
     display: none;
+  }
+
+  .sort-title {
+    gap: 4px;
   }
 
   .sort-btn {
@@ -366,11 +378,12 @@ span.size {
   .show-sorted {
     font-size: 14px;
     font-weight: 400;
-    margin-top: 5px;
   }
 
   .productListSection {
     max-width: 100%;
+    margin-top: 56px;
+    margin-bottom: 20px;
   }
 
   .productListSection .listProduct {

@@ -303,9 +303,8 @@ h2 {
   line-height: 36px;
   color: var(--Base-Base_White);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 30px auto;
+  justify-self: flex-start;
+  align-self: flex-end;
   transition: 0.5s;
 }
 

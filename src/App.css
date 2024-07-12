@@ -13,3 +13,7 @@
   --Base-Base_Black: #0a0a0b;
   --Secondary-Secondary: #ce4f0d;
 }
+
+body {
+  background-color: var(--Base-Base_White);
+}
