@@ -340,7 +340,7 @@ body {
     grid-template-columns: 39.8% 54.6;
   }
 
-  .productListSection {
+  .rec-items .productListSection {
     display: none;
   }
 

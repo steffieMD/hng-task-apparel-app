@@ -92,21 +92,24 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="productListSection">
-        <div className="listProduct">
-          {productData.map((item, i) => {
-            if (i < 3)
-              return (
-                <Product
-                  name={item.name}
-                  price={item.price}
-                  src={item.image}
-                  key={i}
-                />
-              );
-          })}
+      <div className="rec-items">
+        <div className="productListSection">
+          <div className="listProduct">
+            {productData.map((item, i) => {
+              if (i < 3)
+                return (
+                  <Product
+                    name={item.name}
+                    price={item.price}
+                    src={item.image}
+                    key={i}
+                  />
+                );
+            })}
+          </div>
         </div>
       </div>
+
       <div className="chatbot">?</div>
     </div>
   );
