@@ -30,12 +30,9 @@ body {
 body::-webkit-scrollbar {
   width: 0;
 }
-
 .navbar {
   background-color: #172039 !important;
-  padding: 0 24px !important;
-  flex-wrap: nowrap !important;
-  height: 80px !important;
+  padding: 9px 24px !important;
 }
 
 .navbar a {
@@ -51,13 +48,12 @@ body::-webkit-scrollbar {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0.5rem;
 }
 
-.navbar .container-fluid {
-  gap: 20px !important;
+.nav-icons li {
+  padding-left: 25px;
 }
+
 .flex-row {
   gap: 0 !important;
 }
@@ -65,7 +61,6 @@ body::-webkit-scrollbar {
 .btn {
   border: 2px solid #e1e5f3 !important;
   border-left: none !important;
-  /* padding: 15px 15px 15px 15px; */
   background-color: #fff !important;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
@@ -262,6 +257,7 @@ a.sale {
 .store-btn {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .store {
@@ -300,26 +296,8 @@ a.sale {
 /* Mobile */
 @media only screen and (max-width: 600px) {
   /* navbar */
-  .nav-icons {
-    display: flex;
-    flex-direction: row !important;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-font-weight: ;
-    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
-    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
-  }
-
   .navbar {
     padding: 10px 15px !important;
-  }
-
-  .navbar .container-fluid {
-    display: block !important;
-    padding-left: 0px;
   }
 
   .magIcon {
@@ -327,8 +305,7 @@ a.sale {
   }
 
   .homePage {
-    padding-left: 15px !important;
-    width: 110px !important;
+    width: 90px !important;
   }
 
   .nav-icons img {
@@ -336,33 +313,8 @@ a.sale {
     height: 24px;
   }
 
-  .main-footer {
-    padding: 0;
-    display: block;
-  }
-
-  .footer-info {
-    display: none;
-  }
-
-  .payment {
-    margin-top: 0;
-    width: 100%;
-  }
-  .policy-footer {
-    height: 55px;
-  }
-
-  .payment-icons:nth-child(3),
-  .payment-icons:nth-child(6),
-  .payment-icons:nth-child(7) {
-    display: none;
-  }
-
-  .payment-options {
-    justify-content: center;
-    gap: 6.4px;
-    margin-bottom: 9.4px;
+  .nav-icons li {
+    padding-left: 10px;
   }
 }
 
@@ -408,20 +360,51 @@ a.sale {
 }
 
 @media only screen and (max-width: 992px) {
-  .navbar .container-fluid {
-    display: block !important;
-    padding-left: 0px;
+  .toggle-div {
+    display: flex !important;
+    gap: 11px;
   }
 
   .magIcon {
     display: block !important;
   }
 
-  .homePage {
-    padding-left: 25px !important;
+  .nav-icons li {
+    padding-left: 15px;
   }
 
   .navbar a {
-    font-size: 14px !important;
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 696px) {
+  .main-footer {
+    padding: 0;
+    display: block;
+  }
+
+  .footer-info {
+    display: none;
+  }
+
+  .payment {
+    margin-top: 0;
+    width: 100%;
+  }
+  .policy-footer {
+    height: 55px;
+  }
+
+  .payment-icons:nth-child(3),
+  .payment-icons:nth-child(6),
+  .payment-icons:nth-child(7) {
+    display: none;
+  }
+
+  .payment-options {
+    justify-content: center;
+    gap: 6.4px;
+    margin-bottom: 9.4px;
   }
 }
