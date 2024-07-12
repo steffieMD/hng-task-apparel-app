@@ -9,7 +9,7 @@ export default function Cart() {
   const [productData, setProductData] = useState([{ isLoaded: true }]);
 
   useEffect(() => {
-    axios.get("../products.json").then((response) => {
+    axios.get("db/products.json").then((response) => {
       setProductData(response.data);
     });
   }, []);
