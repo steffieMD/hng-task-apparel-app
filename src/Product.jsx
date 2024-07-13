@@ -2,10 +2,9 @@ import likeIcon from "./assets/svg/like-icon.svg";
 import blackClogs from "./assets/png/image-1.png";
 import "./styles/productlist-page.css";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
-function Product({ name, price, src }) {
+function Product(props) {
+  const { name, current_price, photos } = props.data;
   const navigate = useNavigate();
 
   const handleProceedToCart = () => {
@@ -87,7 +86,10 @@ function Product({ name, price, src }) {
         </div>
       </div>
       <div className="img-div" onClick={handleShowProduct}>
-        <img src={src} alt="black clogs" />
+        <img
+          src={`https://api.timbu.cloud/images/${photos.at(0).url}`}
+          alt="black clogs"
+        />
       </div>
       <div className="price-size-cart">
         <div className="size-price">
@@ -118,7 +120,7 @@ function Product({ name, price, src }) {
               </span>
             </div>
           </div>
-          <div className="price">£200</div>
+          <div className="price">£{current_price.at(0).USD.at(0)}</div>
         </div>
         <button className="addCart" onClick={handleProceedToCart}>
           Add To Cart

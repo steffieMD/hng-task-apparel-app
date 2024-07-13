@@ -535,3 +535,12 @@ span.size {
     width: 80%;
   }
 }
+
+@media screen and (min-width: 1225px) {
+  .shoe-options-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+}

@@ -4,11 +4,15 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 function ProductList() {
-  const [productData, setProductData] = useState([{ isLoaded: true }]);
+  const apiKey = `861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const apiUrl = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=687e20cb6a264b0582796344b87df9b8&Appid=CGHFUV32M4R3K95&Apikey=861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const [productData, setProductData] = useState([]);
 
   useEffect(() => {
-    axios.get("/db/products.json").then((response) => {
-      setProductData(response.data);
+    axios.get(apiUrl).then((response) => {
+      setProductData(response.data.items);
     });
   }, []);
 
@@ -49,16 +53,9 @@ function ProductList() {
         </div>
         <div className="productListSection">
           <div className="listProduct">
-            {productData.map((item, i) => {
-              return (
-                <Product
-                  name={item.name}
-                  price={item.price}
-                  src={item.image}
-                  key={i}
-                />
-              );
-            })}
+            {productData.map((item, i) => (
+              <Product data={item} key={i} />
+            ))}
           </div>
         </div>
         <div className="bottom-page-direction">
