@@ -421,6 +421,25 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 907px) {
+  .shipping-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shipping-form {
+    width: 100%;
+  }
+
+  .shipping-cart-page-summary,
+  .shipping-page-div,
+  .shipping-page-div .radio-box {
+    width: 100%;
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .shipping-summary button {

@@ -2,13 +2,36 @@ import likeIcon from "./assets/svg/like-icon.svg";
 import blackClogs from "./assets/png/image-1.png";
 import "./styles/productlist-page.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Product(props) {
-  const { name, current_price, photos } = props.data;
+  const { name, current_price, photos, id, url_slug } = props.data;
+
   const navigate = useNavigate();
+
+  const handleAddToCart = function (id) {
+    const carts = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const findProduct = carts.find((val) => val.id == id);
+
+    if (findProduct) {
+      findProduct.quantity += 1;
+    } else {
+      carts.push({
+        id: id,
+        quantity: 1,
+      });
+    }
+    storeCart(carts);
+  };
+
+  const storeCart = function (carts) {
+    localStorage.setItem("cart", JSON.stringify(carts));
+  };
 
   const handleProceedToCart = () => {
     navigate("/cartpage");
+    handleAddToCart(id);
   };
 
   const handleShowProduct = () => {

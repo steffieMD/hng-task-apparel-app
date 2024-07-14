@@ -515,6 +515,7 @@ span.size {
 @media only screen and (max-width: 1240px) {
   .productListSection .listProduct {
     column-gap: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -533,6 +534,23 @@ span.size {
 @media only screen and (min-width: 651px) and (max-width: 840px) {
   .listProduct .item {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .bottom-page-direction {
+    display: none;
+  }
+
+  .btn-loadMore {
+    display: flex;
+    /* margin-top: 20px; */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 753px) {
+  .btn-loadMore {
+    margin-top: 20px;
   }
 }
 

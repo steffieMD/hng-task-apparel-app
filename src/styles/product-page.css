@@ -215,8 +215,15 @@ ul {
   letter-spacing: -0.03em;
   color: var(--Base-Base_Black) !important;
   text-decoration: none !important;
+  width: 100% !important;
 }
 
+.description {
+  color: var(--Neutrals-Neutrals600);
+  padding: 0 0 20px 0;
+  display: none;
+  border-bottom: 1px solid var(--Primary-Primary1000);
+}
 .hover-text {
   padding-left: 20px;
   font-size: 16px;

@@ -53,9 +53,9 @@ function ProductList() {
         </div>
         <div className="productListSection">
           <div className="listProduct">
-            {productData.map((item, i) => (
-              <Product data={item} key={i} />
-            ))}
+            {productData.map((item, i) => {
+              return <Product data={item} key={i} />;
+            })}
           </div>
         </div>
         <div className="bottom-page-direction">

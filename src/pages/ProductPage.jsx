@@ -16,13 +16,51 @@ import colorOptionImg2 from "../assets/png/terrain-clogs-product-img/color-optio
 import colorOptionImg3 from "../assets/png/terrain-clogs-product-img/color-option-img-3.png";
 import colorOptionImg4 from "../assets/png/terrain-clogs-product-img/color-option-img-4.png";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
 export default function ProductPage() {
+  const apiKey = `861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const apiUrl = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=687e20cb6a264b0582796344b87df9b8&Appid=CGHFUV32M4R3K95&Apikey=861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const [productData, setProductData] = useState([]);
+  const [descStyle, setDescStyle] = useState({});
+  const [linkDesc, setLinkDesc] = useState({});
   const navigate = useNavigate();
+  const { url_slug } = useParams;
 
   const handleProceedToCart = () => {
     navigate("/cartpage");
   };
+
+  useEffect(() => {
+    axios.get(apiUrl).then((response) => {
+      setProductData(response.data.items);
+    });
+  }, []);
+
+  const handleShowDescription = function (e) {
+    e.preventDefault();
+
+    if (descStyle.display === "block") {
+      setDescStyle({
+        display: "none",
+      });
+      setLinkDesc({
+        borderBottom: "1px solid var(--Primary-Primary1000)",
+      });
+    } else {
+      setDescStyle({
+        display: "block",
+      });
+      setLinkDesc({
+        borderBottom: "none",
+      });
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -122,14 +160,18 @@ export default function ProductPage() {
               </button>
             </div>
             <ul className="other-others">
-              <li>
-                <a href="">
+              <li style={linkDesc}>
+                <a href="" className="product-desc">
                   <span>Product Description</span>
-                  <span>
+                  <span onClick={handleShowDescription}>
                     <img src={plusIcon} alt="" />
                   </span>
                 </a>
               </li>
+              <span className="description" style={descStyle}>
+                Description
+              </span>
+
               <li>
                 <a href="">
                   <span>Brand</span>

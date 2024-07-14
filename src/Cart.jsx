@@ -1,16 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import "./styles/cart-page.css";
 import Product from "./Product";
-import itemImage from "./assets/png/image-1.png";
+
 import axios from "axios";
 import { useState, useEffect } from "react";
+import ProductCart from "./ProductCart";
 
 export default function Cart() {
-  const [productData, setProductData] = useState([{ isLoaded: true }]);
+  const apiKey = `861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const apiUrl = `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=687e20cb6a264b0582796344b87df9b8&Appid=CGHFUV32M4R3K95&Apikey=861aba5c5594402385828f8b3796cff420240713170045427609`;
+
+  const [productData, setProductData] = useState([]);
 
   useEffect(() => {
-    axios.get("db/products.json").then((response) => {
-      setProductData(response.data);
+    axios.get(apiUrl).then((response) => {
+      setProductData(response.data.items);
     });
   }, []);
 
@@ -20,6 +25,8 @@ export default function Cart() {
     navigate("/shipping");
   };
 
+  const carts = JSON.parse(localStorage.getItem("cart"));
+
   return (
     <div className="cart-container">
       <div className="cart-container-div">
@@ -27,40 +34,25 @@ export default function Cart() {
         <div className="cart-summary">
           <div className="cart">
             <div className="cart-items">
-              <div className="item">
-                <div className="item-image">
-                  <img src={itemImage} alt="clogs" />
-                </div>
-                <div className="item-info-div">
-                  <div className="item-info">
-                    <span className="name">Classic All-Terrain. Clog</span>
-                    <div></div>
-
-                    <div className="span-context">
-                      <span>Colour:</span>
-                      <span>Black</span>
-                    </div>
-                    <div className="span-context">
-                      <span>Size:</span>
-                      <span>US 13</span>
-                    </div>
-                    <span className="edit">Edit</span>
-                  </div>
-                  <div className="price-quantity">
-                    <span className="price">$39.99</span>
-                    <div className="edit-cart">
-                      <div className="change-quantity">
-                        <span className="minus">-</span>
-                        <span className="quantity">1</span>
-                        <span className="plus">+</span>
-                      </div>
-                      <span className="delete">Delete</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {carts.length > 0 ? (
+                carts.map((cart, i) => {
+                  let productPosition = productData.findIndex(
+                    (value) => value.id == cart.id
+                  );
+                  if (productData.length > 0) {
+                    return (
+                      <ProductCart
+                        data={productData[productPosition]}
+                        key={i}
+                        qty={cart.quantity}
+                      />
+                    );
+                  }
+                })
+              ) : (
+                <>Cart is Empty</>
+              )}
             </div>
-
             <span className="for-you">Recommended for You</span>
           </div>
           <div className="order-summary">
@@ -96,15 +88,7 @@ export default function Cart() {
         <div className="productListSection">
           <div className="listProduct">
             {productData.map((item, i) => {
-              if (i < 3)
-                return (
-                  <Product
-                    name={item.name}
-                    price={item.price}
-                    src={item.image}
-                    key={i}
-                  />
-                );
+              if (i < 3) return <Product data={item} key={i} />;
             })}
           </div>
         </div>

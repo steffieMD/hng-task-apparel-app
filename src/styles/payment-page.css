@@ -438,6 +438,31 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 907px) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shipping-address-form,
+  .form-input,
+  .split-form {
+    width: 100%;
+  }
+
+  .shipping-cart-page-summary,
+  .shipping-page-div,
+  .shipping-page-div .radio-box {
+    width: 100%;
+  }
+
+  .chatbot {
+    margin: 20px 0 20px 0;
+  }
+}
+
 /* Tablet */
 @media only screen and (min-width: 601px) and (max-width: 1240px) {
   .payment-summary button {
